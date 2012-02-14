@@ -7,6 +7,7 @@ colorscheme molokai
 
 filetype plugin indent on
 
+let g:syntastic_check_on_open = 1
 let mapleader = ","
 
 nnoremap <C-h> <C-w>h
