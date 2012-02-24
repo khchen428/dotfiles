@@ -18,7 +18,6 @@ nnoremap <Leader>h <C-w><
 nnoremap <Leader>j <C-w>-
 nnoremap <Leader>k <C-w>+
 nnoremap <Leader>l <C-w>>
-nnoremap <Leader>n :NERDTreeToggle<CR>
 nnoremap <Leader>s :%s/\s\+$//g<CR>
 
 set autoindent
