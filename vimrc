@@ -7,6 +7,8 @@ colorscheme molokai
 
 filetype plugin indent on
 
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabLongestEnhanced = 1
 let g:syntastic_check_on_open = 1
 let mapleader = ","
 
