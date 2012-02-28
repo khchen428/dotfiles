@@ -19,3 +19,9 @@ fi
 compinit
 zstyle ":completion:*:descriptions" format "%U%B%d%b%u"
 zstyle ":completion:*:warnings" format "%BSorry, no matches for: %d%b"
+
+if which vim &>/dev/null; then
+    export EDITOR=$(which vim)
+else
+    export EDITOR=$(which vi)
+fi
