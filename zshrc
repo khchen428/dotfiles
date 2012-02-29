@@ -25,3 +25,18 @@ if which vim &>/dev/null; then
 else
     export EDITOR=$(which vi)
 fi
+
+if which virtualenvwrapper.sh &>/dev/null; then
+    WORKON_HOME=$HOME/.virtualenvs
+
+    if [[ ! -e $WORKON_HOME ]]; then
+        mkdir $WORKON_HOME
+    fi
+
+    if [[ -d $WORKON_HOME ]]; then
+        export WORKON_HOME
+        source $(which virtualenvwrapper.sh)
+    else
+        unset WORKON_HOME
+    fi
+fi
