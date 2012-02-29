@@ -1,5 +1,3 @@
 typeset -U path
-if [[ $OSTYPE == darwin* ]]; then
-    path=(/opt/local/{bin,sbin} $path)
-fi
-path=($HOME/bin $path)
+path=($HOME/bin {$HOME,/opt}/local/{bin,sbin} $path)
+path=($^path(-/N))
