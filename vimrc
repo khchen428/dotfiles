@@ -36,7 +36,7 @@ set ignorecase
 set incsearch
 set laststatus=2
 set list
-set listchars=eol:<,tab:>-,trail:-
+set listchars=tab:▸\ ,eol:¬
 set nomodeline
 set number
 set ruler
