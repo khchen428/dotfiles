@@ -12,6 +12,9 @@ let g:SuperTabLongestEnhanced = 1
 let g:syntastic_check_on_open = 1
 let mapleader = ","
 
+source $VIMRUNTIME/mswin.vim
+behave mswin
+
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
