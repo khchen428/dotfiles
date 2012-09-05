@@ -3,7 +3,8 @@ set all&
 runtime bundle/vim-pathogen/autoload/pathogen.vim
 call pathogen#infect()
 
-colorscheme molokai
+set background=dark
+colorscheme solarized
 
 filetype plugin indent on
 
