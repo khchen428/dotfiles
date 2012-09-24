@@ -1,4 +1,4 @@
-COMPLETION_WAITING_DOTS=true
+OMPLETION_WAITING_DOTS=true
 DISABLE_AUTO_UPDATE=true
 ZSH=$HOME/.oh-my-zsh
 ZSH_THEME=candy
@@ -25,3 +25,4 @@ if which virtualenvwrapper.sh &>/dev/null; then
         unset WORKON_HOME
     fi
 fi
+

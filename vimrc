@@ -58,4 +58,6 @@ set visualbell
 set wildmenu
 set wildmode=list:longest
 
+au BufWritePost *.py,*.js silent! !ctags -R &
+
 syntax on
