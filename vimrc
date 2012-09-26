@@ -28,6 +28,7 @@ nnoremap <Leader>s :%s/\s\+$//g<CR>
 
 set autoindent
 set backspace=eol,indent,start
+set cc=80
 set cindent
 set completeopt=longest,menu,menuone,preview
 set copyindent
