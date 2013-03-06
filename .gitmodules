@@ -34,3 +34,9 @@
 [submodule "vim/bundle/vim-easytags"]
 	path = vim/bundle/vim-easytags
 	url = git://github.com/xolox/vim-easytags.git
+[submodule "vim/bundle/vim-gitgutter"]
+	path = vim/bundle/vim-gitgutter
+	url = git://github.com/airblade/vim-gitgutter.git
+[submodule "vim/bundle/jsoncodecs"]
+	path = vim/bundle/jsoncodecs
+	url = https://github.com/michalliu/jsoncodecs.vim.git
