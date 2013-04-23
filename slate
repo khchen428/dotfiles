@@ -1,26 +1,75 @@
-# This is the default .slate file.
-# If no ~/.slate file exists this is the file that will be used.
-
 config defaultToCurrentScreen true
-config nudgePercentOf screenSize
-config resizePercentOf screenSize
+# Shows app icons and background apps, spreads icons in the same place.
+config windowHintsShowIcons true
+config windowHintsIgnoreHiddenWindows false
+config windowHintsSpread true
 
-# Resize Bindings
-bind right:alt;cmd       resize +10% +0
-bind left:alt;cmd        resize -10% +0
-bind up:alt;cmd          resize +0   -10%
-bind down:alt;cmd        resize +0   +10%
+# Window Hints
+bind e:cmd hint ASDFGHJKLQWERTYUIOPCVBN # use whatever keys you want
+
+#grid layout
+bind g:cmd grid padding:5 0:2,2 0:2,2
 
 # Push Bindings
-bind right:ctrl;cmd;alt  push right bar-resize:screenSizeX/2
-bind left:ctrl;cmd;alt   push left  bar-resize:screenSizeX/2
-bind up:ctrl;cmd;alt     push up    bar-resize:screenSizeY/2
-bind down:ctrl;cmd;alt   push down  bar-resize:screenSizeY/2
+bind right:ctrl;cmd push right bar-resize:screenSizeX/2
+bind left:ctrl;cmd push left bar-resize:screenSizeX/2
+bind up:ctrl;cmd push up bar-resize:screenSizeY/2
+bind down:ctrl;cmd push down bar-resize:screenSizeY/2
+
+bind l:ctrl;cmd push right bar-resize:screenSizeX/2
+bind j:ctrl;cmd push left bar-resize:screenSizeX/2
+bind i:ctrl;cmd push up bar-resize:screenSizeY/2
+bind ,:ctrl;cmd push down bar-resize:screenSizeY/2
+
+# Screen movement
+
+# Corner Bindings
+bind o:ctrl;cmd corner top-right resize:screenSizeX/2;screenSizeY/2
+bind .:ctrl;cmd corner bottom-right resize:screenSizeX/2;screenSizeY/2
+bind m:ctrl;cmd corner bottom-left resize:screenSizeX/2;screenSizeY/2
+bind u:ctrl;cmd corner top-left resize:screenSizeX/2;screenSizeY/2
+
+#Full Screen
+bind k:ctrl;cmd resize +100% +100%
+
+# Resize Bindings
+bind right:alt resize +10% +0
+bind left:alt resize -10% +0
+bind up:alt resize +0 -10%
+bind down:alt resize +0 +10%
+bind right:ctrl;alt resize -10% +0 bottom-right
+bind left:ctrl;alt resize +10% +0 bottom-right
+bind up:ctrl;alt resize +0 +10% bottom-right
+bind down:ctrl;alt resize +0 -10% bottom-right
+
+# Nudge Bindings
+bind right:shift;alt nudge +10% +0
+bind left:shift;alt nudge -10% +0
+bind up:shift;alt nudge +0 -10%
+bind down:shift;alt nudge +0 +10%
+
+# Throw Bindings
+bind 1:ctrl;alt throw 0 resize
+bind 2:ctrl;alt throw 1 resize
+bind 3:ctrl;alt throw 2 resize
+bind right:ctrl;alt;cmd throw right resize
+bind left:ctrl;alt;cmd throw left resize
+bind up:ctrl;alt;cmd throw up resize
+bind down:ctrl;alt;cmd throw down resize
 
 
-bind 1:ctrl;cmd corner top-right resize:screenSizeX/2;screenSizeY/2
-bind 2:ctrl;cmd corner top-left resize:screenSizeX/2;screenSizeY/2
-bind 3:ctrl;cmd corner bottom-left resize:screenSizeX/2;screenSizeY/2
-bind 4:ctrl;cmd corner bottom-right resize:screenSizeX/2;screenSizeY/2
-bind m:ctrl;cmd;alt  corner top-left resize:screenSizeX;screenSizeY
+bind up:cmd;alt focus behind
+bind down:cmd;alt focus behind
+
+# App Switching
+
+bind c:cmd;ctrl focus 'Google Chrome'
+bind f:cmd;ctrl focus 'Firefox'
+bind s:cmd;ctrl focus 'Spotify'
+bind h:cmd;ctrl focus 'Hipchat'
+bind t:cmd;ctrl focus 'Sublime Text 2'
+bind x:cmd;ctrl focus 'Xcode'
+bind e:cmd;ctrl focus 'Eclipse'
+bind p:cmd;ctrl focus 'Skype'
+bind `:cmd;ctrl focus 'Terminal'
 
