@@ -27,7 +27,8 @@ bind m:ctrl;cmd corner bottom-left resize:screenSizeX/2;screenSizeY/2
 bind u:ctrl;cmd corner top-left resize:screenSizeX/2;screenSizeY/2
 
 #Full Screen
-bind k:ctrl;cmd resize +100% +100%
+alias full move screenOriginX;screenOriginY screenSizeX;screenSizeY
+bind k:ctrl;cmd ${full}
 
 # Throw Bindings
 bind 1:ctrl;alt throw 0 resize
