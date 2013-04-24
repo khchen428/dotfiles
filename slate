@@ -7,9 +7,6 @@ config windowHintsSpread true
 # Window Hints
 bind e:cmd hint ASDFGHJKLQWERTYUIOPCVBN # use whatever keys you want
 
-#grid layout
-bind g:cmd grid padding:5 0:2,2 0:2,2
-
 # Push Bindings
 bind right:ctrl;cmd push right bar-resize:screenSizeX/2
 bind left:ctrl;cmd push left bar-resize:screenSizeX/2
@@ -31,22 +28,6 @@ bind u:ctrl;cmd corner top-left resize:screenSizeX/2;screenSizeY/2
 
 #Full Screen
 bind k:ctrl;cmd resize +100% +100%
-
-# Resize Bindings
-bind right:alt resize +10% +0
-bind left:alt resize -10% +0
-bind up:alt resize +0 -10%
-bind down:alt resize +0 +10%
-bind right:ctrl;alt resize -10% +0 bottom-right
-bind left:ctrl;alt resize +10% +0 bottom-right
-bind up:ctrl;alt resize +0 +10% bottom-right
-bind down:ctrl;alt resize +0 -10% bottom-right
-
-# Nudge Bindings
-bind right:shift;alt nudge +10% +0
-bind left:shift;alt nudge -10% +0
-bind up:shift;alt nudge +0 -10%
-bind down:shift;alt nudge +0 +10%
 
 # Throw Bindings
 bind 1:ctrl;alt throw 0 resize
