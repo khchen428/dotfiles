@@ -28,3 +28,5 @@ if which virtualenvwrapper.sh &>/dev/null; then
     fi
 fi
 
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

@@ -55,3 +55,6 @@ bind e:cmd;ctrl focus 'Eclipse'
 bind p:cmd;ctrl focus 'Skype'
 bind `:cmd;ctrl focus 'Terminal'
 
+# Snapshot
+bind s:ctrl;alt;cmd snapshot theSnapshot save-to-disk;stack
+bind a:ctrl;alt;cmd activate-snapshot theSnapshot
